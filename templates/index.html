@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Reminder Web App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        h1 {
+            color: #00796b;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        form {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, select:focus {
+            border-color: #00796b;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 121, 107, 0.2);
+        }
+        
+        button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #004d40;
+        }
+        
+        h2 {
+            color: #004d40;
+            margin-top: 40px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        table th, table td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        table th {
+            background-color: #00796b;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: #00796b;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Health Reminder App</h1>
+    <form action="/set_notifications" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="sleep_hours">Amount of Sleep (hours):</label>
+        <input type="number" id="sleep_hours" name="sleep_hours" min="1" max="12" placeholder="How many hours you plan to sleep" required>
+
+        <label for="hour">Preferred Sleep Hour:</label>
+        <input type="number" id="hour" name="hour" min="1" max="12" placeholder="Hour (1-12)" required>
+
+        <label for="minute">Preferred Sleep Minute:</label>
+        <input type="number" id="minute" name="minute" min="0" max="59" step="5" placeholder="Minute (00, 05, 10, ...)" required>
+
+        <label for="ampm">AM/PM:</label>
+        <select id="ampm" name="ampm" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+
+        <button type="submit">Set Notifications</button>
+    </form>
+
+    <h2>Saved Sleep Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Sleep Time</th>
+                <th>Wake Time</th>
+                <th>Hours of Sleep</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in user_data %}
+            <tr>
+                <td>{{ user.name }}</td>
+                <td>{{ user.sleep_time }}</td>
+                <td>{{ user.wake_time }}</td>
+                <td>{{ user.sleep_hours }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p>Powered by <a href="https://www.python.org" target="_blank">Python</a> & Flask</p>
+    </div>
+</body>
+</html>
