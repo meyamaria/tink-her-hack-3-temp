@@ -2,33 +2,34 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: DEBUG
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Meya Maria Tony - Toc H institute  of science and technology
+- Member 2: Sreeya Menon P T - Toc H institute  of science and technology
+- Member 3: Sruthy Ravi - Toc H institute  of science and technology
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+In a fast-paced and busy world, people often face challenges in staying organized and managing their time effectively. Forgetting important tasks, missing deadlines, and struggling to prioritize activities are common issues that negatively impact productivity and lead to stress. Existing tools for task management are often too complex or rigid, making them unsuitable for many users’ daily routines. This creates a demand for a user-friendly and adaptable solution that enables individuals to plan their day, set reminders, and receive notifications in a way that seamlessly integrates into their lifestyle, helping them stay on track and achieve their goals.
+
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+In today's fast-paced world, people struggle with task management, often forgetting tasks or missing deadlines, which hampers productivity. There is a need for a simple, flexible system that helps users plan their day, set reminders, and receive notifications to stay organized and efficient.
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+The solution is to develop a simple, user-friendly task management system that allows individuals to plan their day efficiently, set reminders for tasks and deadlines, and receive timely notifications to stay on track. Designed with flexibility in mind, the system will seamlessly integrate into diverse routines, helping users stay organized, productive, and stress-free.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Python
+- Flask
+- plyer, datetime, threading, time, flask.render_template, flask.request, flask.redirect, flask.url_for
+- Flask web server, plyer notification system, threading, HTML/CSS
 
 For Hardware:
 - [List main components]
