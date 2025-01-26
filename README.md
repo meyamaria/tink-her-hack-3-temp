@@ -41,9 +41,9 @@ For Software:
   Notification System (plyer library)
   Task reminders and background task(Automatic)
 # Installation
-  pip install python
-  pip install flask
-  pip install flask plyer
+  pip install python,  
+  pip install flask,  
+  pip install flask plyer,  
   pip install plyer
 
 # Run
