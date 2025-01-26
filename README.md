@@ -99,12 +99,15 @@ OUTPUT:
 ![Screenshot (292)](https://github.com/user-attachments/assets/386e1937-bc20-4bb2-aff8-881ebe45bbd8)
 ![Screenshot (293)](https://github.com/user-attachments/assets/ebbdf25b-c32a-4469-8678-64542335fb06)
 ![fda0aff6-561a-4a46-a4f6-66d46f393b65](https://github.com/user-attachments/assets/95d42650-1a38-4122-9b7c-43ce000067aa)
+![image](https://github.com/user-attachments/assets/bb1eec13-68ca-4b40-8fec-110072df857e)
 
 
 
 
 ### Project Demo
 # Video
+
+https://github.com/user-attachments/assets/316c8a5f-2e1f-410c-88ec-d28f5aab2c4a
 
 
 
