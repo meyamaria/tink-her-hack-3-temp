@@ -1,4 +1,4 @@
-# [Project Name] 🎯
+# HEALTH REMINDER APP🎯
 
 
 ## Basic Details
